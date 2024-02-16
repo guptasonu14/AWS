@@ -79,3 +79,28 @@ Amazon S3 offers a simple web service interface for storing and retrieving any a
    - `"Resource": "arn:aws:s3:::your-bucket-name/*"`
 
 *Now, your object URL is public.*
+
+
+
+# S3 Versioning
+
+S3 versioning is a powerful feature provided by Amazon Simple Storage Service (S3) that allows you to keep multiple versions of an object in the same bucket. This feature is particularly valuable for maintaining a version history of your objects and recovering from accidental deletions or overwrites.
+
+## Enable Versioning on an S3 Bucket
+
+To enable versioning on an S3 bucket, follow these steps:
+
+1. **Using the AWS Management Console:**
+   - Open the S3 console.
+   - Select the target bucket.
+   - Navigate to the "Properties" tab.
+   - Click on "Versioning" and then click "Enable versioning."
+
+    ```markdown
+    ![Enable Versioning](path/to/enable-versioning-screenshot.png)
+    ```
+
+   This ensures that every time you upload a new version of an object, S3 automatically archives the previous version, providing you with a robust version history.
+
+By enabling versioning, you add an extra layer of protection to your data, making it easier to track changes and recover from unintentional modifications.
+
